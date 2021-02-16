@@ -1,3 +1,7 @@
+import sys
+import os
+clear = lambda: os.system('clear')
+
 def code():
   print("\nSelect Operation")
   print("1.Add")
@@ -16,7 +20,10 @@ def code():
     rerun = input("\nDo you want to run this again? [y/n]\n")
 
     if rerun == "y":
+      clear()
       code()
+    else:
+      sys.exit()
 
   if Operator == 2:
     num1 = float(input("Number 1: "))
@@ -27,7 +34,10 @@ def code():
     rerun = input("\nDo you want to run this again? [y/n]\n")
 
     if rerun == "y":
+      clear()
       code()
+    else:
+      sys.exit()
 
   if Operator == 3:
     num1 = float(input("Number 1: "))
@@ -38,7 +48,10 @@ def code():
     rerun = input("\nDo you want to run this again? [y/n]\n")
 
     if rerun == "y":
+      clear()
       code()
+    else:
+      sys.exit()
 
   if Operator == 4:
     num1 = float(input("Number 1: "))
@@ -49,6 +62,10 @@ def code():
     rerun = input("\nDo you want to run this again? [y/n]\n")
 
     if rerun == "y":
+      clear()
       code()
+    else:
+      sys.exit()
 
 code()
+
